@@ -1,0 +1,80 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+
+{% block body %}
+<br><br><br><br><br>
+<section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Ceaser</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form-->
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
+                        {% if sifre %}
+                        <h3>Şifrələnmiş Mətn: {{sifre}}<h3>
+                        
+                        {% endif %}
+                        <form method="POST"  enctype="multipart/form-data">
+                        {% csrf_token %}
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Açar</label>
+                                    <input class="form-control" name="acar" id="message" type="text" placeholder="Açar" required="required" data-validation-required-message="Please enter your name." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Mətn</label>
+                                    <input name="ceaser" class="form-control" id="message" rows="5" placeholder="Mətn" required="required" data-validation-required-message="Please enter a message.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <br />
+                            <div id="success"></div>
+                            <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Göndər</button></div>
+                        </form>
+                    </div>
+                </div><br><br><br>
+                
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Ceaser</h2>
+
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
+                        
+                        <form method="POST"  enctype="multipart/form-data">
+                        {% csrf_token %}
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Açar</label>
+                                    <input class="form-control" name="acar1" id="phone" type="tel" placeholder="Açar" required="required" data-validation-required-message="Please enter your name." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Mətn</label>
+                                    <input name="ceaser" class="form-control" id="message" rows="5" placeholder="Mətn" required="required" data-validation-required-message="Please enter a message.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <br />
+                            <div id="success"></div>
+                            <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Göndər</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock body %}

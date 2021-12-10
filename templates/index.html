@@ -1,0 +1,193 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block body %}
+<header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <div>
+                <img class="masthead-avatar mb-5" src="{% static 'assets/img/ppp2.png' %}" alt="" />
+                <img class="masthead-avatar mb-5" src="{% static 'assets/img/png.png' %}" alt="" />
+                
+                <img class="masthead-avatar mb-5" src="{% static 'assets/img/sadiq2.png' %}" alt="" />
+                </div>
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Haji Davud | Hajili Sadig</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Isdifadə Olundu : Python | Django | HTML | CSS | JS </p>
+            </div>
+</header>
+<section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Şifrələmələr haqqında</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'assets/img/sezar.jpg' %}" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'assets/img/base64.png' %}" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'assets/img/md5.jpg' %}" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Kriptoqrafiya Haqqında</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ml-auto"><p class="lead">Kriptoqrafiya yunanca Κρυπτός (gizli, sirli) və Γραφος (yazı) sözlərindən yaranıb və hər hansı bir informasiyanın konfidensiallığını təmin etmək üçün istifadə edilir. Kriptoqrafiya məlumatın şifrlənməsini nəzərdə tutur. Şifrələnmiş məlumat yalnız açıq mətni oxuma haqqı olan istifadəçi tərəfindən deşifr edilə bilər.</p></div>
+                    <div class="col-lg-4 mr-auto"><p class="lead">Şifrləmə məlumatın təhlükəsizliyinə tam zəmanət vermir amma onun icazəsiz istifadəsini dəfələrlə məhdudlaşdırır. Bu mətni deşifrləyib oxumaq üçün açar sözünü və şifrləmə alqoritmini bilmək lazımdır. Şifrlənəcək mətn açıq mətn adlanır, bu mətn şifrləmə açarından istifadə etməklə şifrləmə alqoritmi vasitəsilə şifrlənir.</p></div>
+                </div>
+                <!-- About Section Button-->
+                
+            </div>
+        </section>
+        <!-- Contact Section-->
+        
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Ceaser</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="{% static 'assets/img/sezar.jpg' %}" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Sezar şifrəsi, Roma lideri Julius Sezarın ilk dəfə istifadə etdiyi şifrələmə üsuludur.Tarixin ilk kriptoloji fikirlərinə ingilis dilində transpozisiya və əvəzetmə şifrəsi, yəni transpozisiya və transkripsiya şifrəsi deyilir.  Bu metodlardan birincisi, mətndəki hərflərin yerlərini dəyişdirməklə, ikincisi isə hərfləri başqa hərflərlə əvəz etməklə əldə edilir.  Bəlkə də bu şifrələmədən istifadə edən ən məşhur texnika Sezar Şifrəsidir: Bu şifrədə hər hərf həmin məktubdan sonra bir neçə hərfdən istifadə edərək yazılır.  Məsələn, 3 hərfli atlama ilə Sezar Şifrəsində "Aztu" əvəzinə "Dcvy" yazılmışdır.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Pəncərəni bağla
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Base64</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="{% static 'assets/img/base64.png' %}" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Base 64, ikili məlumatların yalnız ASCII simvollarının istifadə olunduğu mühitlərdə saxlanmasına imkan verən bir kodlama sxemidir.  Base 64, 8 bit məlumatı 64 bitə çevirmək üçün istifadə olunur.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Pəncərəni bağla
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">MD5</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="{% static 'assets/img/md5.jpg' %}" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Message Digest 5 (MD5) alqoritmi, verilən faylın və ya mesajın (parol və s.) "Hash" funksiyalarına əsaslanan unikal "barmaq izi" nin yaradılmasını təmin edən bir alqoritmdir.  Bu verilənlər bazası idarəetmə texnikadır.  1991-ci ildə MIT-də (Massachusetts Texnologiya İnstitutu) professor Ron Rivest tərəfindən hazırlanmışdır.  Professor Rivest, MD5'i MD4'ün daha yüksək bir versiyası olaraq tasarladı.  Şifrələnəcək mətndən 1 simvolun dəyişdirilməsi şifrə verildikdən sonra hash dəyərinin tamamilə dəyişdirilməsinə səbəb ola bilər. Buna görə şifrələnən mətn yaxşı bir nəzarəti keçməlidir.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Pəncərəni bağla
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock body %}
